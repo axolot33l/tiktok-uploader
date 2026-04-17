@@ -367,6 +367,7 @@ def complete_upload_form(
         _set_cover(page, cover_path)
     if not skip_split_window:
         _remove_split_window(page)
+    _remove_cookies_window(page)
     _handle_modals(page)
     _set_interactivity(page, **kwargs)
     _set_description(page, description)
